@@ -1,0 +1,52 @@
+###############################################YOUNESB#####################################################
+#
+#  General Setting 
+#    
+############################################################################################################
+- general: MTK_PLATFORM_CFG
+  info: 
+    - config_version: V1.1.6
+      platform: MT6739
+      project: younesb
+      storage: EMMC
+      boot_channel: MSDC_0
+      block_size: 0x20000 
+      check_bootloaders_consistency: true
+############################################################################################################
+#
+#  Layout Setting
+#
+############################################################################################################
+- partition_index: SYS0
+  partition_name: preloader
+  file_name: preloader.bin
+  is_download: true
+  type: SV5_BL_BIN
+  linear_start_addr: 0x0
+  physical_start_addr: 0x0
+  partition_size: 0x40000
+  region: EMMC_BOOT1_BOOT2
+  storage: HW_STORAGE_EMMC
+  boundary_check: true
+  is_reserved: false
+  operation_type: BOOTLOADERS
+  is_upgradable: true
+  empty_boot_needed: false
+  reserve: 0x00
+
+- partition_index: SYS1
+  partition_name: pgpt
+  file_name: NONE
+  is_download: false
+  type: NORMAL_ROM
+  linear_start_addr: 0x0
+  physical_start_addr: 0x0
+  partition_size: 0x8000          
+  region: EMMC_USER
+  storage: HW_STORAGE_EMMC
+  boundary_check: true
+  is_reserved: false
+  operation_type: INVISIBLE
+  is_upgradable: false
+  empty_boot_needed: false
+  reserve: 0x00
