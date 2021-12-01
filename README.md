@@ -4,6 +4,7 @@
 ## Requirement
 
 Python 2.7 Required
+EMMC and not UFS
 
 ## Use
 
