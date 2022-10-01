@@ -15,3 +15,7 @@ Command line :
 ```
 python pgpt2scatter.py pgpt_dump.bin
 ```
+
+## Apache 2 License
+
+Free to use and to modify but must include the copyrights and a link to this repo.
