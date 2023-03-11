@@ -1,5 +1,5 @@
 # Scatter Creator for MTK flash/dump
-# Credits to Younes BENSITEL - SEA.
+# Credits to Younes BENSITEL
 
 
 import collections
