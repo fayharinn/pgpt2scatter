@@ -1,6 +1,4 @@
 # Scatter Creator for MTK flash/dump
-# Credits to Younes BENSITEL
-
 
 import collections
 import struct
